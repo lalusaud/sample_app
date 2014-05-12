@@ -27,8 +27,6 @@ class UsersController < ApplicationController
   	end
   end
 
-<<<<<<< HEAD
-=======
   def edit
     @user = User.find(params[:id])
   end
@@ -49,7 +47,6 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
->>>>>>> updating-users
   private
   	def user_params
   		params.require(:user).permit(:name, :email, :password, :password_confirmation)
